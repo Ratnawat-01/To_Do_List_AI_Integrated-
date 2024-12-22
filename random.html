@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Task List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>RANDOM TASK LIST <span></span></h1>
+            <p class="sub-heading">A randomly generated task list for you.</p>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="navigateTo('index.html')">MY TASKS</button>
+            <button onclick="navigateTo('mood.html')">MOOD</button>
+            <button onclick="navigateTo('stopwatch.html')">STOPWATCH</button>
+            <button onclick="navigateTo('music.html')">MUSIC</button>
+            <button onclick="navigateTo('random.html')" style="background-color: #f5b400;">RANDOM</button>
+            <button onclick="navigateTo('progress.html')">PROGRESS</button>
+        </div>
+
+        <!-- Random Task Table -->
+        <div class="section">
+            <h2>RANDOM TASK LIST :</h2>
+            <button id="shuffle-btn" onclick="shuffleTasks()">SHUFFLE AGAIN</button>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>TASK</th>
+                    </tr>
+                </thead>
+                <tbody id="random-task-table">
+                    <!-- Shuffled tasks will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/random.js"></script>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Extension</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>To-Do List Extension</h1>
+            <p class="motivational-thought" id="motivational-thought">
+                <!-- Placeholder text while JS loads -->
+                "Loading your motivational thought..."
+            </p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="navigateTo('index.html')">MY TASKS</button>
+            <button onclick="navigateTo('mood.html')">MOOD</button>
+            <button onclick="navigateTo('stopwatch.html')">STOPWATCH</button>
+            <button onclick="navigateTo('music.html')">MUSIC</button>
+            <button onclick="navigateTo('random.html')">RANDOM</button>
+            <button onclick="navigateTo('progress.html')">PROGRESS</button>
+        </div>
+
+        <!-- Sections -->
+        <div class="sections">
+            <!-- Today Section -->
+            <div class="section" id="today-section">
+                <h2>Today</h2>
+                <ul class="task-list" id="today-tasks">
+                    <!-- Tasks will be added dynamically here -->
+                </ul>
+                <div class="add-task">
+                    <input type="text" id="today-task-input" placeholder="Add a task..." onkeydown="handleEnter(event, 'today')">
+                    <button onclick="addTask('today')">Add</button>
+                </div>
+            </div>
+
+            <!-- Soon Section -->
+            <div class="section" id="soon-section">
+                <h2>Soon</h2>
+                <ul class="task-list" id="soon-tasks">
+                    <!-- Tasks will be added dynamically here -->
+                </ul>
+                <div class="add-task">
+                    <input type="text" id="soon-task-input" placeholder="Add a task..." onkeydown="handleEnter(event, 'soon')">
+                    <button onclick="addTask('soon')">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Function for navigation
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        // Handle Enter key to add tasks
+        function handleEnter(event, section) {
+            if (event.key === "Enter") {
+                addTask(section);
+            }
+        }
+    </script>
+</body>
+</html>

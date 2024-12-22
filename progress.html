@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>YOUR PROGRESS</h1>
+            <p class="sub-heading">View all your completed tasks here.</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="navigateTo('index.html')">MY TASKS</button>
+            <button onclick="navigateTo('mood.html')">MOOD</button>
+            <button onclick="navigateTo('stopwatch.html')">STOPWATCH</button>
+            <button onclick="navigateTo('music.html')">MUSIC</button>
+            <button onclick="navigateTo('random.html')">RANDOM</button>
+            <button onclick="navigateTo('progress.html')">PROGRESS</button>
+        </div>
+
+        <!-- Completed Tasks Table -->
+        <div class="progress-container">
+            <h2>Completed Tasks</h2>
+            <table id="completed-tasks-table">
+                <thead>
+                    <tr>
+                        <th>Task Number</th>
+                        <th>Task Description</th>
+                        <th>Completion Date/Time</th>
+                    </tr>
+                </thead>
+                <tbody id="completed-tasks">
+                    <tr><td colspan="3">No completed tasks yet.</td></tr>
+                </tbody>
+            </table>
+            <button id="clear-completed-tasks">Clear All Completed Tasks</button>
+        </div>
+    </div>
+
+    <script src="js/progress.js"></script>
+    <script>
+        // Navigate to other pages
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

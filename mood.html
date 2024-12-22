@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood-Based Tasks</h1>
+        <p>Your tasks are grouped dynamically based on your mood.</p>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button onclick="location.href='index.html'">MY TASKS</button>
+            <button class="active">MOOD</button>
+            <button onclick="location.href='stopwatch.html'">STOPWATCH</button>
+            <button onclick="location.href='music.html'">MUSIC</button>
+            <button onclick="location.href='random.html'">RANDOM</button>
+            <button onclick="location.href='progress.html'">PROGRESS</button>
+        </div>
+
+        <!-- Mood-Based Task Groups -->
+        <div id="mood-container">
+            <p>Loading mood groups...</p>
+        </div>
+    </div>
+
+    <script src="js/mood.js"></script>
+</body>
+</html>

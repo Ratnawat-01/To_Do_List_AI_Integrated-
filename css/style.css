@@ -1,0 +1,782 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.motivational-thought {
+    font-size: 16px;
+    font-style: italic;
+    color: #ffcc00;
+}
+
+/* Sections */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section {
+    flex: 1;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.task-list li span {
+    flex-grow: 1;
+}
+
+.task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Add Task */
+.add-task {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+}
+
+.add-task button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #ff9900;
+}
+
+
+/* Progress Page */
+.progress-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.progress-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.progress-section button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.progress-section button:hover {
+    background-color: #ff9900;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #ff9900;
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #333; /* Dark background */
+    color: #f4f4f4; /* Light text */
+}
+
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+table th {
+    background-color: #222; /* Dark header */
+    font-weight: bold;
+    color: #ffcc00; /* Yellow text for header */
+}
+
+table tr:nth-child(even) {
+    background-color: #444; /* Consistent dark grey for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #333; /* Slightly darker grey for odd rows */
+}
+
+table tr:hover {
+    background-color: #555; /* Highlight on hover */
+}
+
+/* Button Styling */
+button#clear-completed-tasks {
+    background-color: #ffcc00; /* Extension theme yellow */
+    color: #333; /* Dark text */
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button#clear-completed-tasks:hover {
+    background-color: #ff9900; /* Darker yellow on hover */
+}
+
+
+/* General Theme Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00; /* Yellow header color */
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #ccc; /* Lighter gray for subtitles */
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #e6b800;
+}
+
+.nav-buttons button.active {
+    background-color: #ffaa00; /* Active page color */
+    color: #fff;
+}
+
+/* Mood Container */
+#mood-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.mood-group {
+    margin-bottom: 20px;
+    background-color: #333; /* Darker card background */
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.mood-group h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.mood-group ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mood-group li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #2a2a2a;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.mood-group li:hover {
+    background-color: #444; /* Slight highlight on hover */
+}
+
+.mood-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.mood-group span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.task-checkbox {
+    cursor: pointer;
+}
+
+.task-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+span {
+    font-size: 1rem;
+    color: #f5b400;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #292929;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #f5b400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #f5b400;
+    color: #333333;
+}
+
+button[style*="background-color"] {
+    color: #333333;
+}
+
+/* Section Header */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5b400;
+}
+
+/* Shuffle Button */
+#shuffle-btn {
+    background-color: #f5b400;
+    color: #1c1c1c;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#shuffle-btn:hover {
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f5b400;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+tr:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #f5b400;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #f5b400;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #e09e00;
+}
+
+/* Main Music Layout */
+.music-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Useful Noise Music Section */
+.noise-section {
+    flex: 1; /* Reduced size */
+    text-align: center;
+}
+
+.noise-section h2 {
+    font-size: 18px;
+    color: #f5b400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.noise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Smaller grid layout */
+    gap: 10px;
+    justify-items: center;
+}
+
+.noise-box {
+    width: 80px; /* Smaller size */
+    height: 50px; /* Smaller size */
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.noise-box.white { background-color: #fff; }
+.noise-box.pink { background-color: #ff66b2; }
+.noise-box.brown { background-color: #a0522d; color: #fff; }
+.noise-box.green { background-color: #4caf50; }
+.noise-box.blue { background-color: #2196f3; }
+.noise-box.violet { background-color: #8a2be2; color: #fff; }
+
+.noise-box:hover {
+    filter: brightness(90%);
+    transform: scale(1.05);
+}
+
+/* Add Your Own Music Section */
+.custom-music-section {
+    flex: 2; /* Increased size */
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.custom-music-section h2 {
+    font-size: 20px;
+    color: #f5b400;
+    margin-bottom: 10px;
+}
+
+#music-url {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.custom-music-section button {
+    background-color: #f5b400;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.custom-music-section button:hover {
+    background-color: #e09e00;
+}
+
+/* Scrollable Table */
+.scrollable-table {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+}
+
+th {
+    background-color: #444;
+    color: #f5b400;
+}
+
+td button {
+    background-color: #ff9800;
+    color: #000;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td button:hover {
+    background-color: #e68a00;
+}
+
+a {
+    color: #f5b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Player Section */
+#player {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Stopwatch Section */
+.stopwatch-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.task-timer, .simple-stopwatch {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.timer-clock, .simple-stopwatch h2 {
+    margin-bottom: 10px;
+}
+
+#timer-display, #stopwatch-display {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #f5b400;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5b400;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+#task-dropdown, #time-input {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+#mute-button {
+    background-color: #ff4d4d; /* Red color for emphasis */
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+#mute-button:hover {
+    background-color: #ff0000;
+}
+
+
+/* Container for Mood Groups */
+.group {
+    margin-bottom: 20px;
+    text-align: left; /* Align content to the left */
+}
+
+/* Mood Titles Styling */
+.group h2 {
+    color: #f5b400; /* Keep the mood title color */
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: left; /* Force title to align left */
+    padding-left: 10px; /* Add padding for slight indentation */
+}
+
+/* Task List Styling */
+.task-table {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 20px; /* Indent tasks slightly */
+}
+
+.task-table li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fff; /* Text color */
+}

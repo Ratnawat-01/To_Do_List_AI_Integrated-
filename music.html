@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>MUSIC</h1>
+            <p class="sub-heading">Listen music to boost your productivity.</p>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="navigateTo('index.html')">MY TASKS</button>
+            <button onclick="navigateTo('mood.html')">MOOD</button>
+            <button onclick="navigateTo('stopwatch.html')">STOPWATCH</button>
+            <button onclick="navigateTo('music.html')" style="background-color: #f5b400;">MUSIC</button>
+            <button onclick="navigateTo('random.html')">RANDOM</button>
+            <button onclick="navigateTo('progress.html')">PROGRESS</button>
+        </div>
+
+        <!-- Main Music Section -->
+        <div class="music-main">
+            <!-- Noise Buttons -->
+            <div class="noise-section">
+                <h2>USEFUL NOISE MUSIC</h2>
+                <div class="noise-grid">
+                    <button onclick="playNoise('https://youtu.be/x_white_noise_link')" class="noise-box white">WHITE NOISE</button>
+                    <button onclick="playNoise('https://youtu.be/x_pink_noise_link')" class="noise-box pink">PINK NOISE</button>
+                    <button onclick="playNoise('https://youtu.be/x_brown_noise_link')" class="noise-box brown">BROWN NOISE</button>
+                    <button onclick="playNoise('https://youtu.be/x_green_noise_link')" class="noise-box green">GREEN NOISE</button>
+                    <button onclick="playNoise('https://youtu.be/x_blue_noise_link')" class="noise-box blue">BLUE NOISE</button>
+                    <button onclick="playNoise('https://youtu.be/x_violet_noise_link')" class="noise-box violet">VIOLET NOISE</button>
+                </div>
+                <div id="player"></div>
+            </div>
+
+            <!-- Custom Music Section -->
+            <div class="custom-music-section">
+                <h2>ADD YOUR OWN MUSIC</h2>
+                <div class="add-music-form">
+                    <input type="text" id="music-url" placeholder="Paste YouTube, Spotify, or Apple Music link">
+                    <button onclick="addSong()">Add</button>
+                </div>
+                <div class="scrollable-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.NO</th>
+                                <th>SONG NAME</th>
+                                <th>REMOVE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="song-table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Ensure navigation works -->
+    <script src="js/music.js"></script>
+</body>
+</html>

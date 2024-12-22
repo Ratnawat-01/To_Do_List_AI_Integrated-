@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>STOPWATCH</h1>
+            <p class="sub-heading">A Timer and Stopwatch so you can do your tasks efficiently.</p>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button onclick="navigateTo('index.html')">MY TASKS</button>
+            <button onclick="navigateTo('mood.html')">MOOD</button>
+            <button onclick="navigateTo('stopwatch.html')" style="background-color: #f5b400;">STOPWATCH</button>
+            <button onclick="navigateTo('music.html')">MUSIC</button>
+            <button onclick="navigateTo('random.html')">RANDOM</button>
+            <button onclick="navigateTo('progress.html')">PROGRESS</button>
+        </div>
+
+        <!-- Stopwatch Section -->
+        <div class="stopwatch-section">
+          <!-- Timer Section -->
+<div class="task-timer">
+    <h2>Task Timer</h2>
+    <div class="timer-container">
+        <select id="task-dropdown">
+            <option value="" disabled selected>View Tasks</option>
+        </select>
+        <div id="timer-display">00 : 00 : 00</div> <!-- Timer Centered -->
+        <input type="time" id="time-input" placeholder="00:00">
+    </div>
+    <button onclick="startTaskTimer()">Start Timer</button>
+    <button id="mute-button" onclick="stopSound()" style="display: none;">Stop Sound</button>
+</div>
+
+
+            <!-- Simple Stopwatch -->
+            <div class="simple-stopwatch">
+                <h2>SIMPLE STOPWATCH</h2>
+                <div id="stopwatch-display">00 : 00 : 00</div>
+                <button onclick="startStopStopwatch()">Start/Stop</button>
+                <button onclick="resetStopwatch()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio for Timer End -->
+    <audio id="timer-sound" src="ring.mp3"></audio>
+
+    <script src="js/stopwatch.js"></script>
+</body>
+</html>
+
+
+
